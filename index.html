@@ -8,15 +8,44 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        daisyui: {
+          themes: [
+            {
+              mytheme: {
+                primary: "#4400ff",
+
+                secondary: "#00dd4e",
+
+                accent: "#4400ff",
+
+                neutral: "#0c0400",
+
+                "base-100": "#272a25",
+
+                info: "#30b0ff",
+
+                success: "#75c41f",
+
+                warning: "#d02c00",
+
+                error: "#dd0014",
+              },
+            },
+          ],
+        },
+      };
+    </script>
   </head>
   <body>
     <section class="flex justify-center flex-col p-7 h-full w-full">
       <section class="grid grid-cols-4">
         <div class="col-span-2 mockup-code p-10 m-4">
-          <pre><code><textarea name="" id="" class="resize-none w-full h-full bg-[#191d24]"></textarea></code></pre>
+          <pre><code><textarea name="" id="" class="resize-none w-full h-full bg-neutral"></textarea></code></pre>
         </div>
         <div class="col-span-2 mockup-code p-10 m-4">
-          <pre><code><textarea name="" id="" class="resize-none w-full h-full bg-[#191d24]"></textarea></code></pre>
+          <pre><code><textarea name="" id="" class="resize-none w-full h-full bg-neutral"></textarea></code></pre>
         </div>
         <button class="btn col-start-2 m-4">Valider</button>
         <button class="btn col-start-3 m-4">Reset</button>
