@@ -1,5 +1,7 @@
 document
   .getElementsByTagName("button")[0]
   .addEventListener("click", function () {
-    document.getElementsByTagName("textarea")[0].value = "";
+    document.getElementById("code").value = "";
+    document.getElementById("display").innerHTML = "";
+
   });
