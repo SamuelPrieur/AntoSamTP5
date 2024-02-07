@@ -1,6 +1,8 @@
 
 function isCodeCorrect(){
 
+    console.log("oui");
+
     var usrPrompt = document.getElementsByClassName("btn")[0];
 
     if (usrPrompt == correctAnswer){
