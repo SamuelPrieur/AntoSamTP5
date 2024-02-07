@@ -50,15 +50,26 @@
     </script>
   </head>
   <body class="bg-base-100">
+    <div class="absolute m-4 flex items-center">
+      <img class="h-12" src="./components/Logo.svg" alt="Logo" />
+      <h1 class="m-2 text-2xl font-bold">
+        Tailwind
+        <h2 class="text-xl">Tutorial</h2>
+      </h1>
+    </div>
     <section class="flex justify-center flex-col p-7 h-full w-full">
-      <section class="grid grid-cols-4">
-        <div class="col-span-2 mockup-code p-10 m-4">
-          <pre><code><textarea name="" id="" class="resize-none w-full h-full bg-neutral" onchange="isCodeCorrect()"></textarea></code></pre>
+      <section class="grid grid-cols-6">
+        <div class="col-span-3 mockup-code p-10 m-4">
+          <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="isCodeCorrect()"></textarea></code></pre>
         </div>
-        <div class="col-span-2 mockup-code p-10 m-4">
-          <pre><code><textarea name="" id="" class="resize-none w-full h-full bg-neutral"></textarea></code></pre>
+        <div class="col-span-3 mockup-code p-10 m-4 bg-[#F2F2F2]">
+          <div
+            class="w-full h-full bg-[#F2F2F2]"
+            id="display"
+            name="display"
+          ></div>
         </div>
-        <button class="btn col-start-3 m-4">Reset</button>
+        <button class="btn col-start-2 m-4">Reset</button>
       </section>
     </section>
     <script src="script/validateCode.js"></script>
