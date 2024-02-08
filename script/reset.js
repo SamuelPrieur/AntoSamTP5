@@ -3,5 +3,4 @@ document
   .addEventListener("click", function () {
     document.getElementById("code").value = "";
     document.getElementById("display").innerHTML = "";
-
   });
