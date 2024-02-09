@@ -71,7 +71,7 @@
     <section class="flex justify-center flex-col p-7 h-full w-full">
       <section class="grid grid-cols-6">
         <div class="col-span-3 mockup-code p-10 m-4">
-          <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="isCodeCorrect()"></textarea></code></pre>
+          <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="interprete()"></textarea></code></pre>
         </div>
         <div class="col-span-3 mockup-code p-10 m-4 bg-[#F2F2F2]">
           <div
@@ -80,10 +80,11 @@
             name="display"
           ></div>
         </div>
-        <button class="btn col-start-2 m-4">Reset</button>
+        <button class="btn col-start-3 m-4">Valider</button>
+        <button class="btn col-start-4 m-4">Reset</button>
       </section>
     </section>
-    <script src="script/validateCode.js"></script>
+    <script src="script/interpreter.js"></script>
     <script src="script/reset.js"></script>
   </body>
 </html>

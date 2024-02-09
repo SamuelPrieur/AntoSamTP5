@@ -1,5 +1,5 @@
 document
-  .getElementsByTagName("button")[0]
+  .getElementsByTagName("button")[1]
   .addEventListener("click", function () {
     document.getElementById("code").value = "";
     document.getElementById("display").innerHTML = "";
