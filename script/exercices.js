@@ -79,14 +79,14 @@ function exo3(){
 
     reset.addEventListener("click",function(){
 
-        code.value = '<div class="bg-gray-200 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond grise et une marge de 1.5rem.</p></div>'
-        display.innerHTML = '<div class="bg-gray-200 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond grise et une marge de 1.5rem.</p></div>'
+        code.value = '<div class="bg-blue-600 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond bleue et une marge de 1.5rem. Modifiez la classe pour obtenir un contenu dans une boîte avec une couleur de fond verte (400) et une marge de 2.0rem.</p></div>'
+        display.innerHTML = '<div class="bg-blue-600 m-6 p-4"<p>Ceci est un contenu dans une boîte avec une couleur de fond bleue et une marge de 1.5rem. Modifiez la classe pour obtenir un contenu dans une boîte avec une couleur de fond verte (400) et une marge de 2.0rem.</p></div>'
     })
 
-    let correctAnswer = '<div class="bg-green-400 m-8 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond verte et une marge de 2.0rem.</p></div>'
+    let correctAnswer = '<div class="bg-green-400 m-8 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond bleue et une marge de 1.5rem. Modifiez la classe pour obtenir un contenu dans une boîte avec une couleur de fond verte (400) et une marge de 2.0rem.</p></div>'
 
-    code.value = '<div class="bg-gray-200 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond grise et une marge de 1.5rem.</p></div>'
-    display.innerHTML = '<div class="bg-gray-200 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond grise et une marge de 1.5rem.</p></div>'
+    code.value = '<div class="bg-blue-600 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond bleue et une marge de 1.5rem. Modifiez la classe pour obtenir un contenu dans une boîte avec une couleur de fond verte (400) et une marge de 2.0rem.</p></div>'
+    display.innerHTML = '<div class="bg-blue-600 m-6 p-4"><p>Ceci est un contenu dans une boîte avec une couleur de fond bleue et une marge de 1.5rem. Modifiez la classe pour obtenir un contenu dans une boîte avec une couleur de fond verte (400) et une marge de 2.0rem.</p></div>'
 
     submit.addEventListener("click",function(){
 
