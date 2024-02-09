@@ -25,23 +25,23 @@
           themes: [
             {
               mytheme: {
-                primary: "#4400ff",
+                primary: "#00c3af",
 
-                secondary: "#00dd4e",
+                secondary: "#007fff",
 
-                accent: "#4400ff",
+                accent: "#00c900",
 
-                neutral: "#0c0400",
+                neutral: "#0f0703",
 
-                "base-100": "#272a25",
+                "base-100": "#202635",
 
-                info: "#30b0ff",
+                info: "#008aff",
 
-                success: "#75c41f",
+                success: "#a1fa73",
 
-                warning: "#d02c00",
+                warning: "#ba6e00",
 
-                error: "#dd0014",
+                error: "#ff6775",
               },
             },
           ],
@@ -50,30 +50,43 @@
     </script>
   </head>
   <body class="bg-base-100 text-[#F2F2F2]">
-    <div class="m-4 flex items-center">
+    <div class="m-4 sticky top-4 flex items-center">
       <img class="h-12" src="./components/Logo.svg" alt="Logo" />
       <h1 class="m-2 text-2xl font-bold">
         Tailwind
         <h2 class="text-xl">Tutorial</h2>
       </h1>
     </div>
-    <div
-      class="flex absolute justify-center flex-col p-7 m-16 rounded-xl bg-neutral"
-    >
-      <h2 class="m-2 text-2xl font-bold">Cours :</h2>
-      <p class="text-lg">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-        laboriosam voluptatibus expedita nostrum aut molestias consequuntur,
-        nemo quam dolorem non atque earum distinctio qui modi tempore! Enim ipsa
-        laborum similique.
-      </p>
-    </div>
     <section class="flex justify-center flex-col p-7 h-full w-full">
       <section class="grid grid-cols-6">
-        <div class="col-span-3 mockup-code p-10 m-4">
+        <div
+          class="flex col-span-6 justify-center flex-col p-7 m-16 rounded-xl bg-neutral"
+        >
+          <h2 class="m-2 text-2xl font-bold">
+            Leçons :
+            <span class="ml-3 text-lg font-normal">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+              laboriosam voluptatibus expedita nostrum aut molestias
+              consequuntur, nemo quam dolorem non atque earum distinctio qui
+              modi tempore! Enim ipsa laborum similique.
+            </span>
+          </h2>
+          <div class="divider"></div>
+          <h2 class="m-2 text-2xl font-bold">
+            Consigne :
+            <span class="ml-3 text-lg font-normal">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+              laboriosam voluptatibus expedita nostrum aut molestias
+              consequuntur, nemo quam dolorem non atque earum distinctio qui
+              modi tempore! Enim ipsa laborum similique.
+            </span>
+          </h2>
+        </div>
+
+        <div class="col-span-3 mockup-code h-auto p-10 m-4">
           <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="interprete()"></textarea></code></pre>
         </div>
-        <div class="col-span-3 mockup-code p-10 m-4 bg-[#F2F2F2]">
+        <div class="col-span-3 mockup-code h-auto p-10 m-4 bg-[#F2F2F2]">
           <div
             class="w-full h-full bg-[#F2F2F2]"
             id="display"
