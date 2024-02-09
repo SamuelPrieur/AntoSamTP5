@@ -68,12 +68,14 @@
         laborum similique.
       </p>
     </div>
+    
     <section class="flex justify-center flex-col p-7 h-full w-full">
       <section class="grid grid-cols-6">
+        <div class="col-span-6" id="notif"></div>
         <div class="col-span-3 mockup-code p-10 m-4">
           <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="interprete()"></textarea></code></pre>
         </div>
-        <div class="col-span-3 mockup-code p-10 m-4 bg-[#F2F2F2]">
+        <div class="col-span-3 mockup-code p-10 m-4 bg-[#F2F2F2]" id="answerZone">
           <div
             class="w-full h-full bg-[#F2F2F2]"
             id="display"
@@ -85,6 +87,8 @@
       </section>
     </section>
     <script src="script/interpreter.js"></script>
-    <script src="script/reset.js"></script>
+    <script src="script/ex1.js"></script>
+
+   
   </body>
 </html>
