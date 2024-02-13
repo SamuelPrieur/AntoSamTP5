@@ -1,4 +1,4 @@
-<html lang="fr">
+<html lang="fr" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
@@ -22,34 +22,12 @@
     <script>
       tailwind.config = {
         daisyui: {
-          themes: [
-            {
-              mytheme: {
-                primary: "#00c3af",
-
-                secondary: "#007fff",
-
-                accent: "#00c900",
-
-                neutral: "#0f0703",
-
-                background: "#202635",
-
-                info: "#008aff",
-
-                success: "#a1fa73",
-
-                warning: "#ba6e00",
-
-                error: "#ff6775",
-              },
-            },
-          ],
+          themes: ["dark"],
         },
       };
     </script>
   </head>
-  <body class="bg-background text-[#F2F2F2]">
+  <body>
     <div class="m-4 sticky top-4 flex items-center">
       <img class="h-12" src="./components/Logo.svg" alt="Logo" />
       <h1 class="m-2 text-2xl font-bold">
@@ -61,7 +39,7 @@
     <section class="flex justify-center flex-col p-7 h-full w-full">
       <section class="grid grid-cols-6">
         <div
-          class="flex col-span-6 justify-center flex-col p-7 m-16 rounded-xl bg-neutral"
+          class="flex col-span-6 justify-center flex-col p-7 m-16 rounded-xl"
         >
           <h2 class="m-2 text-2xl font-bold">
             Leçons :
@@ -87,10 +65,7 @@
         <div class="col-span-3 mockup-code h-auto p-10 m-4">
           <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="interprete()"></textarea></code></pre>
         </div>
-        <div
-          class="col-span-3 mockup-code h-auto p-10 m-4 bg-neutral"
-          id="answerZone"
-        >
+        <div class="col-span-3 mockup-code h-auto p-10 m-4" id="answerZone">
           <div class="w-full h-full" id="display" name="display"></div>
         </div>
         <button class="btn col-start-3 m-4" id="submit">Valider</button>
