@@ -1,4 +1,4 @@
-<html lang="fr" data-theme="dark">
+<html lang="fr" data-theme="night">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
     <script>
       tailwind.config = {
         daisyui: {
-          themes: ["dark"],
+          themes: ["night"],
         },
       };
     </script>
@@ -68,8 +68,12 @@
         <div class="col-span-3 mockup-code h-auto p-10 m-4" id="answerZone">
           <div class="w-full h-full" id="display" name="display"></div>
         </div>
-        <button class="btn col-start-3 m-4" id="submit">Valider</button>
-        <button class="btn col-start-4 m-4" id="reset">Reset</button>
+        <button class="btn col-start-3 m-4 btn-primary" id="submit">
+          Valider
+        </button>
+        <button class="btn col-start-4 m-4 btn-primary" id="reset">
+          Reset
+        </button>
       </section>
     </section>
     <script src="script/interpreter.js"></script>
