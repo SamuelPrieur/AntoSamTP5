@@ -33,7 +33,7 @@
 
                 neutral: "#0f0703",
 
-                "base-100": "#202635",
+                background: "#202635",
 
                 info: "#008aff",
 
@@ -49,7 +49,7 @@
       };
     </script>
   </head>
-  <body class="bg-base-100 text-[#F2F2F2]">
+  <body class="bg-background text-[#F2F2F2]">
     <div class="m-4 sticky top-4 flex items-center">
       <img class="h-12" src="./components/Logo.svg" alt="Logo" />
       <h1 class="m-2 text-2xl font-bold">
@@ -57,10 +57,9 @@
         <h2 class="text-xl">Tutorial</h2>
       </h1>
     </div>
-    
+
     <section class="flex justify-center flex-col p-7 h-full w-full">
       <section class="grid grid-cols-6">
-       
         <div
           class="flex col-span-6 justify-center flex-col p-7 m-16 rounded-xl bg-neutral"
         >
@@ -84,16 +83,15 @@
             </span>
           </h2>
         </div>
-        <div class=" col-start-2 col-span-4" id="notif"></div>
+        <div class="col-start-2 col-span-4" id="notif"></div>
         <div class="col-span-3 mockup-code h-auto p-10 m-4">
           <pre><code><textarea name="code" id="code" class="resize-none w-full h-full bg-neutral" onchange="interprete()"></textarea></code></pre>
         </div>
-        <div class="col-span-3 mockup-code h-auto p-10 m-4 bg-neutral" id="answerZone">
-          <div
-            class="w-full h-full"
-            id="display"
-            name="display"
-          ></div>
+        <div
+          class="col-span-3 mockup-code h-auto p-10 m-4 bg-neutral"
+          id="answerZone"
+        >
+          <div class="w-full h-full" id="display" name="display"></div>
         </div>
         <button class="btn col-start-3 m-4" id="submit">Valider</button>
         <button class="btn col-start-4 m-4" id="reset">Reset</button>
@@ -101,7 +99,5 @@
     </section>
     <script src="script/interpreter.js"></script>
     <script src="script/exercices.js"></script>
-
-   
   </body>
 </html>
